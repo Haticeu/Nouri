@@ -1,0 +1,9 @@
+node_modules/
+.pgdata/
+# Saved logins (password hashes) from `npm run reset-demo`
+.accounts-backup.json
+# Local secrets (Anthropic API key)
+.env
+
+# Safety copies of the local database
+.pgdata-backup-*/

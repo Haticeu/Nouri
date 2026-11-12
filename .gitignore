@@ -1,0 +1,28 @@
+# Dependencies and build output
+node_modules/
+build/
+*.apk
+*.aab
+
+# Local secrets and data (never public)
+.env
+.env.*
+!.env.example
+devserver/.pgdata/
+devserver/.pgdata-backup-*/
+devserver/.accounts-backup.json
+
+# Downloaded datasets and test images (re-created by the seed scripts)
+supabase/seed/.cache/
+
+# Photo-recognition model: download it with supabase/seed/build_photo_index.mjs
+# (MobileCLIP weights have their own license; we don't redistribute them).
+app/assets/ai/food_vision.onnx
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+app/android/.kotlin/

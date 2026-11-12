@@ -1,0 +1,13 @@
+﻿{
+  "name": "nouri",
+  "private": true,
+  "type": "module",
+  "description": "Nouri: dietitian & client nutrition app (Flutter + Supabase).",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build:web": "cd app && flutter build web --pwa-strategy=none --dart-define=SUPABASE_URL=http://localhost:54321 --dart-define=SUPABASE_KEY=local-dev-key",
+    "reset-demo": "cd devserver && node reset-demo.mjs",
+    "test": "cd supabase/tests && npm test && cd ../../app && flutter test",
+    "export:public": "node scripts/export-public.mjs"
+  }
+}

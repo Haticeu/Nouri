@@ -1,0 +1,4 @@
+# Downloaded USDA datasets (re-created by build_foods.mjs)
+.cache/
+
+node_modules/
